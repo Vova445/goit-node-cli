@@ -20,7 +20,7 @@ async function getContactById(contactId) {
     const contact = contacts.find((c) => c.id === contactId);
     return contact || null;
   } catch (error) {
-    console.error("Error contact by ID:", error);
+    console.error("Error contact ID:", error);
     return null;
   }
 }
